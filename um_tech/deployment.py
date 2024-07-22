@@ -4,7 +4,7 @@ from .settings import BASE_DIR
 
 SECRET_KEY = 'django-insecure-&4&+l165gya5!^dg%wjl1!^btmo)nmfq2-y&x#9!r#joduz^8i'
 
-ALLOWED_HOSTS = ['*','169.254.130.2',os.environ['WEBSITE_HOSTNAME']]
+ALLOWED_HOSTS = ['*',os.environ['WEBSITE_HOSTNAME']]
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']]
 DEBUG = False
 INSTALLED_APPS = [
@@ -97,6 +97,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'um_tech.wsgi.application'
 # settings.py
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # STORAGES={
