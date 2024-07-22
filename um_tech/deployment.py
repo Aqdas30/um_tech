@@ -95,7 +95,8 @@ TEMPLATES = [
 
 
 WSGI_APPLICATION = 'um_tech.wsgi.application'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+# settings.py
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # STORAGES={
