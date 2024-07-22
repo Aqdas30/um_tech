@@ -1,5 +1,4 @@
 import os 
-from .settings import *
 from .settings import BASE_DIR
 
 SECRET_KEY = 'django-insecure-&4&+l165gya5!^dg%wjl1!^btmo)nmfq2-y&x#9!r#joduz^8i'
