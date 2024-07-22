@@ -95,18 +95,18 @@ TEMPLATES = [
 
 
 WSGI_APPLICATION = 'um_tech.wsgi.application'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STORAGES={
-    "default": {
-        "BACKEND":"django.core.files.storage.FileSystemStorage",
+# STORAGES={
+#     "default": {
+#         "BACKEND":"django.core.files.storage.FileSystemStorage",
 
-    },
-    "staticfiles": {
-        "BACKEND":"whitenoise.storage.CompressedStaticFilesStorage",
-    },
-}
+#     },
+#     "staticfiles": {
+#         "BACKEND":"whitenoise.storage.CompressedStaticFilesStorage",
+#     },
+# }
 conn_str = os.environ['AZURE_POSTGRESQL_CONNECTIONSTRING']
 conn_str_params = {pair.split('=')[0]: pair.split('=')[1] for pair in conn_str.split(' ')}
 DATABASES = {
