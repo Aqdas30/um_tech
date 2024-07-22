@@ -7,7 +7,30 @@ SECRET_KEY = 'django-insecure-&4&+l165gya5!^dg%wjl1!^btmo)nmfq2-y&x#9!r#joduz^8i
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']]
 DEBUG = False
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'mainApp',
 
+
+]
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Replace with your SMTP server address
+EMAIL_PORT = 587  # Or 465 for SSL
+EMAIL_USE_TLS = True  # Or EMAIL_USE_SSL = True if using SSL
+EMAIL_HOST_USER = 'aqdaszulfiqar30@gmail.com'  # Your email address
+EMAIL_HOST_PASSWORD = 'fqhy ghjj gdbl taux'  # Your email password
+
+# Contact email address
+#CONTACT_EMAIL = 'Umtechnicalservices@gmail.com'
+
+CONTACT_EMAIL = 'aqdaszulfiqar30@gmail.com'
 # WhiteNoise configuration
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -20,6 +43,24 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ] 
 
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # Optional: For project-wide templates
+        'APP_DIRS': True,  # Ensures app-specific template directories are used
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+
+WSGI_APPLICATION = 'um_tech.wsgi.application'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

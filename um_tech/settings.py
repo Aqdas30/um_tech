@@ -54,7 +54,10 @@ EMAIL_HOST_USER = 'aqdaszulfiqar30@gmail.com'  # Your email address
 EMAIL_HOST_PASSWORD = 'fqhy ghjj gdbl taux'  # Your email password
 
 # Contact email address
-CONTACT_EMAIL = 'Umtechnicalservices@gmail.com'
+#CONTACT_EMAIL = 'Umtechnicalservices@gmail.com'
+
+CONTACT_EMAIL = 'aqdaszulfiqar30@gmail.com'
+
 
 
 MIDDLEWARE = [
