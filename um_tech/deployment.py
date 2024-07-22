@@ -42,7 +42,26 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ] 
+LOGGING={
+    'version':1,
+    'disable_existing_loggers': False,
+    'handlers':{
+        'mail_admins':{
+            'level':'ERROR',
+            'class':'django.utils.log.adminEmailHandler',
 
+        },
+        'loggers':{
+            'django':{
+                'handlers':['mail_admins'],
+                'level':'ERROR',
+                'propagate':True
+            },
+        },
+    }
+}
+
+ADMINS=[("Aqdas","aqdaszulfiqar30@gmail.com")]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
