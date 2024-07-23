@@ -441,15 +441,15 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
-  background-color: #0355cc;
-  border: 1px solid #0355cc;
+  background-color: #1A3636;
+  border: 1px solid #1A3636;
   border-radius: 2px;
   color: #ffffff;
 }
 
 .about_section .detail-box a:hover {
   background-color: transparent;
-  color: #0355cc;
+  color: #1A3636;
 }
 
 .about_section .img-box img {
@@ -473,7 +473,7 @@ a:focus {
 .professional_section .detail-box h2 {
   text-transform: uppercase;
   font-weight: bold;
-  color: #0355cc;
+  color: #1A3636;
 }
 
 .professional_section .detail-box p {
@@ -486,15 +486,15 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
-  background-color: #babc6e;
-  border: 1px solid #babc6e;
+  background-color: #1A3636;
+  border: 1px solid #1A3636;
   border-radius: 2px;
   color: #ffffff;
 }
 
 .professional_section .detail-box a:hover {
   background-color: transparent;
-  color: #babc6e;
+  color: #1A3636;
 }
 
 .service_section {
@@ -555,7 +555,7 @@ a:focus {
 }
 
 .service_section .box:hover {
-  background-color: #ff8a1d;
+  background-color: #1A3636;
   color: #ffffff;
 }
 
@@ -587,7 +587,7 @@ a:focus {
 
 .service_section .btn-box a:hover {
   background-color: transparent;
-  color: #0355cc;
+  color: #1A3636;
 }
 
 .client_section .heading_container {
@@ -642,7 +642,7 @@ a:focus {
 }
 
 .client_section .box .client_id .client_detail .client_info i {
-  color: #fbaf5d;
+  color: #1A3636;
 }
 
 .client_section .box .client_text {
@@ -704,7 +704,7 @@ a:focus {
   height: 135px;
 }
 
-.contact_section button {
+.contact_section form button {
   border: none;
   display: inline-block;
   font-family: 'Merriweather Sans', sans-serif;
@@ -773,7 +773,7 @@ a:focus {
 }
 
 .info_section a:hover {
-  color: #ff8a1d;
+  color: #1A3636;
 }
 
 .info_items a {
@@ -819,7 +819,7 @@ a:focus {
 }
 
 .info_items .item:hover .img-box {
-  background-color: #ff8a1d;
+  background-color: #1A3636;
 }
 
 .info_items {
